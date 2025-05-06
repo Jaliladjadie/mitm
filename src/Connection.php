@@ -46,3 +46,4 @@ class Connection
         Logger::Log("[{$this->connection_id}] " . $msg, $data);
     }
 }
+>
