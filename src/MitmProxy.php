@@ -3,9 +3,9 @@ namespace sskaje\mitm;
 
 
 use React\Dns\Resolver\Factory as DNSFactory;
-use React\EventLoop\Factory;
+use React\EventLoop\Loop;
 use React\Socket\Connection as SocketConnection;
-use React\Socket\Server;
+use React\Socket\HttpServer;
 use React\SocketClient\Connector;
 use React\Stream\Stream;
 use sskaje\mitm\ProxyHandler\Forward;
@@ -23,8 +23,8 @@ class MitmProxy
     {
         $this->options = $options;
 
-        $this->loop         = Factory::create();
-        $this->socket       = new Server($this->loop);
+        $this->loop         = Loop::get();
+        $this->socket       = new HttpServer($this->loop);
         $dnsResolverFactory = new DNSFactory();
         $dns                = $dnsResolverFactory->createCached($options->resolver, $this->loop);
         $this->connector    = new Connector($this->loop, $dns);
@@ -139,5 +139,4 @@ class MitmProxy
     }
 
 }
-
-# EOF
+>
