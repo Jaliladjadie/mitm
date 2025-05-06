@@ -10,11 +10,11 @@ Author: sskaje ([http://sskaje.me/](http://sskaje.me/))
 
 ### Clone Code
 ```
-$ git clone git@github.com:sskaje/mitm.git
+$ git clone git@github.com:JalilaDjadie/mitm.git
 ```
 or 
 ```
-$ git clone https://github.com/sskaje/mitm.git
+$ git clone https://github.com/JalilaDjadie/mitm.git
 ```
 
 ### Composer Install Dependencies
