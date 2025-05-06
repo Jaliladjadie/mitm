@@ -1,4 +1,4 @@
-<?php
+'<?php
 use sskaje\mitm\Connection;
 use sskaje\mitm\Logger;
 use sskaje\mitm\MitmProxy;
@@ -113,7 +113,4 @@ $mitm->set_proxy_handler_factory(function(Connection $connection) {
 });
 
 $mitm->run();
-
-
-
-# EOF
+>
