@@ -1,4 +1,4 @@
-Deleted deprecated Code and replaced it with new Code.
+Deleted deprecated Code and replaced "#EOF" with ">"
 
 
 Original post:
