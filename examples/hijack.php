@@ -1,4 +1,4 @@
-'<?php
+<?php
 use sskaje\mitm\Connection;
 use sskaje\mitm\Logger;
 use sskaje\mitm\MitmProxy;
