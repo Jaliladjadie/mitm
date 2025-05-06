@@ -158,5 +158,4 @@ class Logger
         self::Out("\n");
     }
 }
-
-# EOF
+>
