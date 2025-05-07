@@ -113,4 +113,4 @@ $mitm->set_proxy_handler_factory(function(Connection $connection) {
 });
 
 $mitm->run();
->
+?>
