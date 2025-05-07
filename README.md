@@ -1,4 +1,4 @@
-Deleted deprecated Code and replaced "#EOF" with ">"
+Deleted deprecated Code and replaced "#EOF" with "?>"
 
 tip: if
 ```
