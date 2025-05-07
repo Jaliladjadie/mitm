@@ -1,9 +1,13 @@
 Deleted deprecated Code and replaced "#EOF" with ">"
 
 tip: if
-```$ php composer.phar install```
+```
+$ php composer.phar install
+```
 doesnt work use:
-```$ composer install```
+```
+$ composer install
+```
 
 Original post:
 
