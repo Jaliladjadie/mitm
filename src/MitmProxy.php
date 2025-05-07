@@ -5,7 +5,7 @@ namespace sskaje\mitm;
 use React\Dns\Resolver\Factory as DNSFactory;
 use React\EventLoop\Loop;
 use React\Socket\Connection as SocketConnection;
-use React\Socket\HttpServer;
+use React\Socket\SocketServer;
 use React\SocketClient\Connector;
 use React\Stream\Stream;
 use sskaje\mitm\ProxyHandler\Forward;
