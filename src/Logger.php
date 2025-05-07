@@ -158,4 +158,4 @@ class Logger
         self::Out("\n");
     }
 }
->
+?>
