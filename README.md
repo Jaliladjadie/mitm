@@ -1,5 +1,9 @@
 Deleted deprecated Code and replaced "#EOF" with ">"
 
+tip: if
+```$ php composer.phar install```
+doesnt work use:
+```$ composer install```
 
 Original post:
 
