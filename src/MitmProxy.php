@@ -24,9 +24,7 @@ class MitmProxy
         $this->options = $options;
 
         $this->loop         = Loop::get();
-        $dnsResolverFactory = new DNSFactory();
-        $dns                = $dnsResolverFactory->createCached($options->resolver, $this->loop);
-        $this->connector    = new Connector($this->loop, $dns);
+        $this->connector    = new Connector(null, $this->loop);
 
     }
 
