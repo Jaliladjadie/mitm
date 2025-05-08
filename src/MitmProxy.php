@@ -125,7 +125,7 @@ class MitmProxy
 
     public function run()
     {
-$this->socket = new Server($this->options->listen_host . ":" .$this->options->listen_port, $this->loop);
+        $this->socket = new Server($this->options->listen_host . ":" .$this->options->listen_port, $this->loop);
         $this->configure_proxy();
 
         //$this->socket->listen($this->options->listen_port, $this->options->listen_host);
