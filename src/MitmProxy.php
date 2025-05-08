@@ -24,7 +24,6 @@ class MitmProxy
         $this->options = $options;
 
         $this->loop         = Loop::get();
-        $this->socket       = new Server($this->options->listen_host . ":" .$this->options->listen_port, $this->loop);
         $dnsResolverFactory = new DNSFactory();
         $dns                = $dnsResolverFactory->createCached($options->resolver, $this->loop);
         $this->connector    = new Connector($this->loop, $dns);
@@ -126,6 +125,7 @@ class MitmProxy
 
     public function run()
     {
+									$this->socket = new Server($this->options->listen_host . ":" .$this->options->listen_port, $this->loop);
         $this->configure_proxy();
 
         //$this->socket->listen($this->options->listen_port, $this->options->listen_host);
