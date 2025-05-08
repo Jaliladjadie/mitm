@@ -24,7 +24,7 @@ class MitmProxy
         $this->options = $options;
 
         $this->loop         = Loop::get();
-        $this->connector    = new Connector(null, $this->loop);
+        $this->connector    = new Connector($this->loop);
 
     }
 
