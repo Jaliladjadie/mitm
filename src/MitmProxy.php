@@ -2,7 +2,7 @@
 namespace sskaje\mitm;
 
 
-//use React\Dns\Resolver\Factory as DNSFactory;
+use React\Dns\Resolver\Factory as DNSFactory;
 use React\EventLoop\Loop;
 use React\Socket\Connection as SocketConnection;
 use React\Socket\Server;
