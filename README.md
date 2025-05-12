@@ -1,3 +1,5 @@
+Warning: the repo isn't done and doesn't work (yet)!
+
 Deleted deprecated Code and replaced "#EOF" with "?>"
 
 tip: if
